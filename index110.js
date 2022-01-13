@@ -122,3 +122,17 @@ printTriangle(3);
 
 console.log('높이: 5');
 printTriangle(5);
+
+let i = 1; // 첫 번째 항
+let k = 1; // 두 번째 항
+let pre = 0;
+let cur = 1;
+let count = 1;
+while (count <= 50) {
+  console.log(cur);
+  let im = pre;
+  pre = cur ;
+  cur = cur + im;
+  count++;
+  
+}
