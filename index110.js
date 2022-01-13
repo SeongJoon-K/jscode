@@ -68,3 +68,57 @@ console.log(result2);
 console.log(result3);
 console.log(result4);
 console.log(result5);
+
+
+// 각 등급별 가격
+let VIPPrice = 15;
+let RPrice = 13;
+let SPrice = 10;
+let APrice = 8;
+
+// 각 등급에 맞는 가격을 출력하는 함수 checkPrice를 완성하세요.
+function checkPrice(grade) {
+  switch (grade) {
+    case 'R' :
+      console.log(`R석은 ${RPrice}만원 입니다.`);
+      break;
+    case 'VIP' :
+      console.log(`VIP석은 ${VIPPrice}만원 입니다.`);
+      break;
+    case 'S' :
+      console.log(`S석은 ${SPrice}만원 입니다.`);
+      break;
+    case 'A' :
+      console.log(`A석은 ${APrice}만원 입니다.`);
+      break;
+    default :
+      console.log("VIP, R, S, A 중에서 하나를 선택해 주세요.");
+  }
+}
+
+// 테스트 코드
+checkPrice('R');
+checkPrice('VIP');
+checkPrice('S');
+checkPrice('A');
+checkPrice('B');
+
+
+function printTriangle(height) {
+  let sTar = ''
+  for (let i = 0; i < height; i++) {
+    sTar += '*'
+    console.log(sTar);
+
+  }
+}
+
+// 테스트 코드
+console.log('높이: 1');
+printTriangle(1);
+
+console.log('높이: 3');
+printTriangle(3);
+
+console.log('높이: 5');
+printTriangle(5);
